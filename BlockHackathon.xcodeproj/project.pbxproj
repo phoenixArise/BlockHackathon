@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		862F135A2915FA3000F22BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F13592915FA3000F22BDC /* AppDelegate.swift */; };
+		862F135C2915FA3000F22BDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F135B2915FA3000F22BDC /* SceneDelegate.swift */; };
+		862F135E2915FA3000F22BDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F135D2915FA3000F22BDC /* ViewController.swift */; };
+		862F13612915FA3000F22BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862F135F2915FA3000F22BDC /* Main.storyboard */; };
+		862F13632915FA3100F22BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862F13622915FA3100F22BDC /* Assets.xcassets */; };
+		862F13662915FA3100F22BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862F13642915FA3100F22BDC /* LaunchScreen.storyboard */; };
+		862F13712915FA3200F22BDC /* BlockHackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F13702915FA3200F22BDC /* BlockHackathonTests.swift */; };
+		862F137B2915FA3200F22BDC /* BlockHackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F137A2915FA3200F22BDC /* BlockHackathonUITests.swift */; };
+		862F137D2915FA3200F22BDC /* BlockHackathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F137C2915FA3200F22BDC /* BlockHackathonUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		862F136D2915FA3200F22BDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862F134E2915FA3000F22BDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 862F13552915FA3000F22BDC;
+			remoteInfo = BlockHackathon;
+		};
+		862F13772915FA3200F22BDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862F134E2915FA3000F22BDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 862F13552915FA3000F22BDC;
+			remoteInfo = BlockHackathon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		862F13562915FA3000F22BDC /* BlockHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		862F13592915FA3000F22BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		862F135B2915FA3000F22BDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		862F135D2915FA3000F22BDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		862F13602915FA3000F22BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		862F13622915FA3100F22BDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		862F13652915FA3100F22BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		862F13672915FA3100F22BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		862F136C2915FA3200F22BDC /* BlockHackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockHackathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		862F13702915FA3200F22BDC /* BlockHackathonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockHackathonTests.swift; sourceTree = "<group>"; };
+		862F13762915FA3200F22BDC /* BlockHackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockHackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		862F137A2915FA3200F22BDC /* BlockHackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockHackathonUITests.swift; sourceTree = "<group>"; };
+		862F137C2915FA3200F22BDC /* BlockHackathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockHackathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		862F13532915FA3000F22BDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862F13692915FA3200F22BDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862F13732915FA3200F22BDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		862F134D2915FA3000F22BDC = {
+			isa = PBXGroup;
+			children = (
+				862F13582915FA3000F22BDC /* BlockHackathon */,
+				862F136F2915FA3200F22BDC /* BlockHackathonTests */,
+				862F13792915FA3200F22BDC /* BlockHackathonUITests */,
+				862F13572915FA3000F22BDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		862F13572915FA3000F22BDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				862F13562915FA3000F22BDC /* BlockHackathon.app */,
+				862F136C2915FA3200F22BDC /* BlockHackathonTests.xctest */,
+				862F13762915FA3200F22BDC /* BlockHackathonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		862F13582915FA3000F22BDC /* BlockHackathon */ = {
+			isa = PBXGroup;
+			children = (
+				862F13592915FA3000F22BDC /* AppDelegate.swift */,
+				862F135B2915FA3000F22BDC /* SceneDelegate.swift */,
+				862F135D2915FA3000F22BDC /* ViewController.swift */,
+				862F135F2915FA3000F22BDC /* Main.storyboard */,
+				862F13622915FA3100F22BDC /* Assets.xcassets */,
+				862F13642915FA3100F22BDC /* LaunchScreen.storyboard */,
+				862F13672915FA3100F22BDC /* Info.plist */,
+			);
+			path = BlockHackathon;
+			sourceTree = "<group>";
+		};
+		862F136F2915FA3200F22BDC /* BlockHackathonTests */ = {
+			isa = PBXGroup;
+			children = (
+				862F13702915FA3200F22BDC /* BlockHackathonTests.swift */,
+			);
+			path = BlockHackathonTests;
+			sourceTree = "<group>";
+		};
+		862F13792915FA3200F22BDC /* BlockHackathonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				862F137A2915FA3200F22BDC /* BlockHackathonUITests.swift */,
+				862F137C2915FA3200F22BDC /* BlockHackathonUITestsLaunchTests.swift */,
+			);
+			path = BlockHackathonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		862F13552915FA3000F22BDC /* BlockHackathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862F13802915FA3200F22BDC /* Build configuration list for PBXNativeTarget "BlockHackathon" */;
+			buildPhases = (
+				862F13522915FA3000F22BDC /* Sources */,
+				862F13532915FA3000F22BDC /* Frameworks */,
+				862F13542915FA3000F22BDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockHackathon;
+			productName = BlockHackathon;
+			productReference = 862F13562915FA3000F22BDC /* BlockHackathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		862F136B2915FA3200F22BDC /* BlockHackathonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862F13832915FA3200F22BDC /* Build configuration list for PBXNativeTarget "BlockHackathonTests" */;
+			buildPhases = (
+				862F13682915FA3200F22BDC /* Sources */,
+				862F13692915FA3200F22BDC /* Frameworks */,
+				862F136A2915FA3200F22BDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				862F136E2915FA3200F22BDC /* PBXTargetDependency */,
+			);
+			name = BlockHackathonTests;
+			productName = BlockHackathonTests;
+			productReference = 862F136C2915FA3200F22BDC /* BlockHackathonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		862F13752915FA3200F22BDC /* BlockHackathonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862F13862915FA3200F22BDC /* Build configuration list for PBXNativeTarget "BlockHackathonUITests" */;
+			buildPhases = (
+				862F13722915FA3200F22BDC /* Sources */,
+				862F13732915FA3200F22BDC /* Frameworks */,
+				862F13742915FA3200F22BDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				862F13782915FA3200F22BDC /* PBXTargetDependency */,
+			);
+			name = BlockHackathonUITests;
+			productName = BlockHackathonUITests;
+			productReference = 862F13762915FA3200F22BDC /* BlockHackathonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		862F134E2915FA3000F22BDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					862F13552915FA3000F22BDC = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					862F136B2915FA3200F22BDC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 862F13552915FA3000F22BDC;
+					};
+					862F13752915FA3200F22BDC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 862F13552915FA3000F22BDC;
+					};
+				};
+			};
+			buildConfigurationList = 862F13512915FA3000F22BDC /* Build configuration list for PBXProject "BlockHackathon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 862F134D2915FA3000F22BDC;
+			productRefGroup = 862F13572915FA3000F22BDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				862F13552915FA3000F22BDC /* BlockHackathon */,
+				862F136B2915FA3200F22BDC /* BlockHackathonTests */,
+				862F13752915FA3200F22BDC /* BlockHackathonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		862F13542915FA3000F22BDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862F13662915FA3100F22BDC /* LaunchScreen.storyboard in Resources */,
+				862F13632915FA3100F22BDC /* Assets.xcassets in Resources */,
+				862F13612915FA3000F22BDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862F136A2915FA3200F22BDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862F13742915FA3200F22BDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		862F13522915FA3000F22BDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862F135E2915FA3000F22BDC /* ViewController.swift in Sources */,
+				862F135A2915FA3000F22BDC /* AppDelegate.swift in Sources */,
+				862F135C2915FA3000F22BDC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862F13682915FA3200F22BDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862F13712915FA3200F22BDC /* BlockHackathonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862F13722915FA3200F22BDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862F137D2915FA3200F22BDC /* BlockHackathonUITestsLaunchTests.swift in Sources */,
+				862F137B2915FA3200F22BDC /* BlockHackathonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		862F136E2915FA3200F22BDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 862F13552915FA3000F22BDC /* BlockHackathon */;
+			targetProxy = 862F136D2915FA3200F22BDC /* PBXContainerItemProxy */;
+		};
+		862F13782915FA3200F22BDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 862F13552915FA3000F22BDC /* BlockHackathon */;
+			targetProxy = 862F13772915FA3200F22BDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		862F135F2915FA3000F22BDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				862F13602915FA3000F22BDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		862F13642915FA3100F22BDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				862F13652915FA3100F22BDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		862F137E2915FA3200F22BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		862F137F2915FA3200F22BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		862F13812915FA3200F22BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockHackathon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsThatShouldBeFree.redDeveil.BlockHackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		862F13822915FA3200F22BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockHackathon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsThatShouldBeFree.redDeveil.BlockHackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		862F13842915FA3200F22BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsThatShouldBeFree.redDeveil.BlockHackathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockHackathon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlockHackathon";
+			};
+			name = Debug;
+		};
+		862F13852915FA3200F22BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsThatShouldBeFree.redDeveil.BlockHackathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockHackathon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlockHackathon";
+			};
+			name = Release;
+		};
+		862F13872915FA3200F22BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsThatShouldBeFree.redDeveil.BlockHackathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlockHackathon;
+			};
+			name = Debug;
+		};
+		862F13882915FA3200F22BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsThatShouldBeFree.redDeveil.BlockHackathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlockHackathon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		862F13512915FA3000F22BDC /* Build configuration list for PBXProject "BlockHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862F137E2915FA3200F22BDC /* Debug */,
+				862F137F2915FA3200F22BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862F13802915FA3200F22BDC /* Build configuration list for PBXNativeTarget "BlockHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862F13812915FA3200F22BDC /* Debug */,
+				862F13822915FA3200F22BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862F13832915FA3200F22BDC /* Build configuration list for PBXNativeTarget "BlockHackathonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862F13842915FA3200F22BDC /* Debug */,
+				862F13852915FA3200F22BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862F13862915FA3200F22BDC /* Build configuration list for PBXNativeTarget "BlockHackathonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862F13872915FA3200F22BDC /* Debug */,
+				862F13882915FA3200F22BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 862F134E2915FA3000F22BDC /* Project object */;
+}
