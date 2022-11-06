@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Lottie
 
 class ResultViewController: UIViewController {
     var track: Track?
     var car: Car?
     
+    @IBOutlet var animationView: LottieAnimationView!
     @IBOutlet var result: UILabel!
     @IBOutlet var points: UILabel!
     
@@ -20,6 +22,13 @@ class ResultViewController: UIViewController {
         // Do any additional setup after loading the view.
         result.text = Bool.random() ? "Won" : "Lost"
         points.text = "\(Int.random(in: 1...3000))"
+        
+        points.layer.cornerRadius = 15.0
+        points.clipsToBounds = true
+       
+        animationView.animationSpeed = 0.8
+        animationView.loopMode = .loop
+        animationView.play()
     }
     
     /*

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="asb-8H-wsB">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -159,7 +160,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JMj-Cy-CcR">
-                                <rect key="frame" x="20" y="120.00000000000003" width="353" height="407.66666666666674"/>
+                                <rect key="frame" x="20" y="119.99999999999997" width="353" height="367.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cSW-nX-apR">
                                     <size key="itemSize" width="128" height="128"/>
@@ -192,10 +193,17 @@
                                     <constraint firstAttribute="height" constant="196" id="2Rt-Cd-2lp"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJJ-V9-LGU">
+                                <rect key="frame" x="20" y="507.33333333333331" width="353" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CAc-ZT-8f4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="RJJ-V9-LGU" firstAttribute="top" secondItem="JMj-Cy-CcR" secondAttribute="bottom" constant="20" id="3Vi-cC-4Sb"/>
                             <constraint firstItem="CAc-ZT-8f4" firstAttribute="trailing" secondItem="JMj-Cy-CcR" secondAttribute="trailing" constant="20" id="BZH-Ho-DDr"/>
                             <constraint firstItem="JMj-Cy-CcR" firstAttribute="leading" secondItem="CAc-ZT-8f4" secondAttribute="leading" constant="20" id="D5y-jm-SBc"/>
                             <constraint firstItem="hQP-dw-h2m" firstAttribute="leading" secondItem="CAc-ZT-8f4" secondAttribute="leading" constant="20" id="Lyw-eH-fiN"/>
@@ -203,16 +211,19 @@
                             <constraint firstItem="JMj-Cy-CcR" firstAttribute="top" secondItem="hQP-dw-h2m" secondAttribute="bottom" constant="20" id="N4Y-vM-tuE"/>
                             <constraint firstItem="CAc-ZT-8f4" firstAttribute="trailing" secondItem="4fy-Vu-nez" secondAttribute="trailing" constant="20" id="RjS-q8-I0n"/>
                             <constraint firstItem="4fy-Vu-nez" firstAttribute="top" secondItem="Fhz-xU-2jF" secondAttribute="bottom" constant="20" id="Uer-73-sGG"/>
-                            <constraint firstItem="Fhz-xU-2jF" firstAttribute="top" secondItem="JMj-Cy-CcR" secondAttribute="bottom" constant="20" id="Zpl-sJ-AiS"/>
+                            <constraint firstItem="Fhz-xU-2jF" firstAttribute="top" secondItem="RJJ-V9-LGU" secondAttribute="bottom" constant="20" id="ce0-ok-Vef"/>
                             <constraint firstItem="CAc-ZT-8f4" firstAttribute="trailing" secondItem="hQP-dw-h2m" secondAttribute="trailing" constant="20" id="exY-ya-9Z6"/>
                             <constraint firstItem="hQP-dw-h2m" firstAttribute="top" secondItem="CAc-ZT-8f4" secondAttribute="top" constant="20" id="nMB-IT-bAO"/>
                             <constraint firstItem="CAc-ZT-8f4" firstAttribute="trailing" secondItem="Fhz-xU-2jF" secondAttribute="trailing" constant="20" id="q18-W3-OXd"/>
                             <constraint firstItem="CAc-ZT-8f4" firstAttribute="bottom" secondItem="4fy-Vu-nez" secondAttribute="bottom" constant="20" id="sks-Z4-XJf"/>
+                            <constraint firstItem="CAc-ZT-8f4" firstAttribute="trailing" secondItem="RJJ-V9-LGU" secondAttribute="trailing" constant="20" id="x15-Sv-hTF"/>
+                            <constraint firstItem="RJJ-V9-LGU" firstAttribute="leading" secondItem="CAc-ZT-8f4" secondAttribute="leading" constant="20" id="zBs-QC-TX9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="twb-Jy-QYI"/>
                     <connections>
                         <outlet property="carsCollectionView" destination="JMj-Cy-CcR" id="REX-CK-2AW"/>
+                        <outlet property="horsePowerLabel" destination="RJJ-V9-LGU" id="Tl4-kf-NUG"/>
                         <outlet property="selectedCarImageView" destination="Fhz-xU-2jF" id="mqm-jT-PaF"/>
                     </connections>
                 </viewController>
@@ -236,6 +247,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg2-st-vJX">
                                 <rect key="frame" x="109" y="497" width="175" height="175"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.64705882349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="2BI-xH-x6O"/>
                                     <constraint firstAttribute="width" constant="175" id="usm-hN-aan"/>
@@ -258,11 +270,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSD-IB-SCW" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="20" y="140" width="353" height="327"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="72049-red-car"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6hv-a7-IHA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6hv-a7-IHA" firstAttribute="bottom" secondItem="RD1-B4-cHk" secondAttribute="bottom" constant="20" id="2A8-4D-jZx"/>
+                            <constraint firstItem="lSD-IB-SCW" firstAttribute="leading" secondItem="6hv-a7-IHA" secondAttribute="leading" constant="20" id="9ba-zS-ihd"/>
                             <constraint firstItem="NR0-VS-5bM" firstAttribute="leading" secondItem="6hv-a7-IHA" secondAttribute="leading" constant="20" id="A9p-O1-nmR"/>
                             <constraint firstItem="6hv-a7-IHA" firstAttribute="trailing" secondItem="NR0-VS-5bM" secondAttribute="trailing" constant="20" id="QtI-rv-nyR"/>
                             <constraint firstItem="sg2-st-vJX" firstAttribute="centerX" secondItem="StR-K0-dAe" secondAttribute="centerX" id="T2N-8P-cS8"/>
@@ -270,13 +290,17 @@
                             <constraint firstItem="NR0-VS-5bM" firstAttribute="top" secondItem="sg2-st-vJX" secondAttribute="bottom" constant="40" id="bNa-15-iTR"/>
                             <constraint firstItem="RD1-B4-cHk" firstAttribute="top" secondItem="NR0-VS-5bM" secondAttribute="bottom" constant="30" id="dPZ-Ac-KO7"/>
                             <constraint firstItem="7W6-tT-IbR" firstAttribute="leading" secondItem="6hv-a7-IHA" secondAttribute="leading" constant="30" id="krW-3k-1g1"/>
+                            <constraint firstItem="6hv-a7-IHA" firstAttribute="trailing" secondItem="lSD-IB-SCW" secondAttribute="trailing" constant="20" id="mNb-22-0NR"/>
                             <constraint firstItem="6hv-a7-IHA" firstAttribute="trailing" secondItem="7W6-tT-IbR" secondAttribute="trailing" constant="30" id="p1a-rs-KoK"/>
+                            <constraint firstItem="lSD-IB-SCW" firstAttribute="top" secondItem="7W6-tT-IbR" secondAttribute="bottom" constant="30" id="uH3-aN-B0B"/>
+                            <constraint firstItem="sg2-st-vJX" firstAttribute="top" secondItem="lSD-IB-SCW" secondAttribute="bottom" constant="30" id="vpp-4E-GBk"/>
                             <constraint firstItem="7W6-tT-IbR" firstAttribute="top" secondItem="6hv-a7-IHA" secondAttribute="top" constant="30" id="w57-FF-G5t"/>
                             <constraint firstItem="6hv-a7-IHA" firstAttribute="trailing" secondItem="RD1-B4-cHk" secondAttribute="trailing" constant="20" id="wok-tJ-AfH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lFp-Y6-yLR"/>
                     <connections>
+                        <outlet property="animationView" destination="lSD-IB-SCW" id="yVn-rK-e8E"/>
                         <outlet property="points" destination="sg2-st-vJX" id="3M5-tv-LQ0"/>
                         <outlet property="result" destination="7W6-tT-IbR" id="Af3-Ne-ub2"/>
                     </connections>

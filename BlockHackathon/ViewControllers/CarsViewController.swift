@@ -16,6 +16,7 @@ struct Car {
 class CarsViewController: UIViewController {
     var track: Track?
     
+    @IBOutlet var horsePowerLabel: UILabel!
     @IBOutlet var carsCollectionView: UICollectionView!
     
     @IBOutlet var selectedCarImageView: UIImageView!
@@ -49,6 +50,7 @@ class CarsViewController: UIViewController {
         carsCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CarCell")
         
         selected = nil
+        horsePowerLabel.text = ""
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -78,7 +80,10 @@ extension CarsViewController: UICollectionViewDelegate, UICollectionViewDataSour
         carImageView.tintColor = colors[indexPath.row]
 //        carImageView.backgroundColor = colors[indexPath.row]
         
+        
         cell.contentView.addSubview(carImageView)
+        
+        
         cell.layer.cornerRadius = 15.0
         cell.clipsToBounds = true
         return cell
@@ -89,7 +94,12 @@ extension CarsViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let carImage = UIImage(systemName: "car")
         selectedCarImageView.image = carImage
         selectedCarImageView.tintColor = colors[indexPath.row]
-        
+        horsePowerLabel.text =
+"""
+    \(cars[indexPath.row].horsePower) HP
+    \(cars[indexPath.row].brakePad) Brake
+    \(cars[indexPath.row].windResistence) Wind Resistance
+"""
         selected = indexPath
     }
 }

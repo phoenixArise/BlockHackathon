@@ -21,6 +21,10 @@
 		8630DF2C2917706000E2467E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630DF2B2917706000E2467E /* ResultViewController.swift */; };
 		8630DF2E291770B500E2467E /* ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630DF2D291770B500E2467E /* ConditionsViewController.swift */; };
 		8630DF30291776EC00E2467E /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630DF2F291776EC00E2467E /* Tracks.swift */; };
+		86317E32291827010076463D /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 86317E31291827010076463D /* giphy.gif */; };
+		86317E34291827450076463D /* giphy-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 86317E33291827440076463D /* giphy-2.gif */; };
+		86317E37291829840076463D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 86317E36291829840076463D /* Lottie */; };
+		86317E3929182AC40076463D /* 72049-red-car.json in Resources */ = {isa = PBXBuildFile; fileRef = 86317E3829182AC40076463D /* 72049-red-car.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,9 @@
 		8630DF2B2917706000E2467E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		8630DF2D291770B500E2467E /* ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsViewController.swift; sourceTree = "<group>"; };
 		8630DF2F291776EC00E2467E /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		86317E31291827010076463D /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		86317E33291827440076463D /* giphy-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "giphy-2.gif"; sourceTree = "<group>"; };
+		86317E3829182AC40076463D /* 72049-red-car.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "72049-red-car.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86317E37291829840076463D /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +123,9 @@
 				8630DF262917703100E2467E /* ViewControllers */,
 				862F135F2915FA3000F22BDC /* Main.storyboard */,
 				862F13622915FA3100F22BDC /* Assets.xcassets */,
+				86317E31291827010076463D /* giphy.gif */,
+				86317E33291827440076463D /* giphy-2.gif */,
+				86317E3829182AC40076463D /* 72049-red-car.json */,
 				862F13642915FA3100F22BDC /* LaunchScreen.storyboard */,
 				862F13672915FA3100F22BDC /* Info.plist */,
 			);
@@ -166,6 +177,9 @@
 			dependencies = (
 			);
 			name = BlockHackathon;
+			packageProductDependencies = (
+				86317E36291829840076463D /* Lottie */,
+			);
 			productName = BlockHackathon;
 			productReference = 862F13562915FA3000F22BDC /* BlockHackathon.app */;
 			productType = "com.apple.product-type.application";
@@ -238,6 +252,9 @@
 				Base,
 			);
 			mainGroup = 862F134D2915FA3000F22BDC;
+			packageReferences = (
+				86317E35291829840076463D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 862F13572915FA3000F22BDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,8 +271,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86317E34291827450076463D /* giphy-2.gif in Resources */,
+				86317E3929182AC40076463D /* 72049-red-car.json in Resources */,
 				862F13662915FA3100F22BDC /* LaunchScreen.storyboard in Resources */,
 				862F13632915FA3100F22BDC /* Assets.xcassets in Resources */,
+				86317E32291827010076463D /* giphy.gif in Resources */,
 				862F13612915FA3000F22BDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +648,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86317E35291829840076463D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86317E36291829840076463D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86317E35291829840076463D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 862F134E2915FA3000F22BDC /* Project object */;
 }
