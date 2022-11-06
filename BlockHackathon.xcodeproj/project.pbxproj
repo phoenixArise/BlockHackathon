@@ -16,6 +16,11 @@
 		862F13712915FA3200F22BDC /* BlockHackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F13702915FA3200F22BDC /* BlockHackathonTests.swift */; };
 		862F137B2915FA3200F22BDC /* BlockHackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F137A2915FA3200F22BDC /* BlockHackathonUITests.swift */; };
 		862F137D2915FA3200F22BDC /* BlockHackathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F137C2915FA3200F22BDC /* BlockHackathonUITestsLaunchTests.swift */; };
+		8630DF282917704B00E2467E /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630DF272917704B00E2467E /* TrackViewController.swift */; };
+		8630DF2A2917705900E2467E /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630DF292917705900E2467E /* CarsViewController.swift */; };
+		8630DF2C2917706000E2467E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630DF2B2917706000E2467E /* ResultViewController.swift */; };
+		8630DF2E291770B500E2467E /* ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630DF2D291770B500E2467E /* ConditionsViewController.swift */; };
+		8630DF30291776EC00E2467E /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630DF2F291776EC00E2467E /* Tracks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		862F13762915FA3200F22BDC /* BlockHackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockHackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		862F137A2915FA3200F22BDC /* BlockHackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockHackathonUITests.swift; sourceTree = "<group>"; };
 		862F137C2915FA3200F22BDC /* BlockHackathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockHackathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8630DF272917704B00E2467E /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		8630DF292917705900E2467E /* CarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
+		8630DF2B2917706000E2467E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		8630DF2D291770B500E2467E /* ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsViewController.swift; sourceTree = "<group>"; };
+		8630DF2F291776EC00E2467E /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +111,8 @@
 			children = (
 				862F13592915FA3000F22BDC /* AppDelegate.swift */,
 				862F135B2915FA3000F22BDC /* SceneDelegate.swift */,
-				862F135D2915FA3000F22BDC /* ViewController.swift */,
+				8630DF2F291776EC00E2467E /* Tracks.swift */,
+				8630DF262917703100E2467E /* ViewControllers */,
 				862F135F2915FA3000F22BDC /* Main.storyboard */,
 				862F13622915FA3100F22BDC /* Assets.xcassets */,
 				862F13642915FA3100F22BDC /* LaunchScreen.storyboard */,
@@ -125,6 +136,18 @@
 				862F137C2915FA3200F22BDC /* BlockHackathonUITestsLaunchTests.swift */,
 			);
 			path = BlockHackathonUITests;
+			sourceTree = "<group>";
+		};
+		8630DF262917703100E2467E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				862F135D2915FA3000F22BDC /* ViewController.swift */,
+				8630DF272917704B00E2467E /* TrackViewController.swift */,
+				8630DF2D291770B500E2467E /* ConditionsViewController.swift */,
+				8630DF292917705900E2467E /* CarsViewController.swift */,
+				8630DF2B2917706000E2467E /* ResultViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8630DF282917704B00E2467E /* TrackViewController.swift in Sources */,
 				862F135E2915FA3000F22BDC /* ViewController.swift in Sources */,
+				8630DF2A2917705900E2467E /* CarsViewController.swift in Sources */,
 				862F135A2915FA3000F22BDC /* AppDelegate.swift in Sources */,
 				862F135C2915FA3000F22BDC /* SceneDelegate.swift in Sources */,
+				8630DF2C2917706000E2467E /* ResultViewController.swift in Sources */,
+				8630DF2E291770B500E2467E /* ConditionsViewController.swift in Sources */,
+				8630DF30291776EC00E2467E /* Tracks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +465,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6K6BFNLSM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockHackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,6 +473,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +494,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6K6BFNLSM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockHackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -471,6 +502,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
